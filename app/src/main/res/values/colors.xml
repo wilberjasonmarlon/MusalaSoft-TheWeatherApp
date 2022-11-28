@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Following the names of the style guide-->
+    <color name="black_12">#1F000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4d000000</color>
+    <color name="black_34">#57000000</color>
+    <color name="black_87">#de000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_51">#82000000</color>
+    <color name="black_54">#8A000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="divider">#1e000000</color>
+    <color name="white_40">#C1757575</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="mercury">#E0E0E0</color>
+    <color name="bali_hai">#90a4ae</color>
+    <color name="bali_hai_transparent">#7790a4ae</color>
+    <color name="malachite">#00C853</color>
+    <color name="pomegranate">#F44336</color>
+    <color name="yellow_sea">#FFAB00</color>
+    <color name="blaze_orange">#ff6d00</color>
+    <color name="dodger_blue">#2196F3</color>
+    <color name="persian_green">#00BFA5</color>
+    <color name="olive_green">#35CD96</color>
+    <color name="pine_green">#00897B</color>
+    <color name="pacific_blue">#00BCD4</color>
+    <color name="gray_f2">#f2f2f2</color>
+    <color name="porcelain">#ECEFF1</color>
+    <color name="porcelain_transparent">#80ECEFF1</color>
+    <color name="blue_stone">#006064</color>
+    <color name="bondi_blue">#0097A7</color>
+    <color name="teal_blue">#0097A7</color>
+
+    <color name="gothic">#607d8b</color>
+    <color name="charlotte">#e0f7fa</color>
+
+    <color name="white_0.7">#b3ffffff</color>
+    <color name="pale_grey_0.7">#b3eceff1</color>
+    <color name="grey_26">#42221f1f</color>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Musala Weather App</string>
+    <string name="unexpected_error">An unexpected error occurred</string>
+    <string name="no_internet">Please, check your internet connection.</string>
+    <string name="permissions_access_location">Permission is required to access the location</string>
+    <string name="no_description" />
+    <string name="celsius_degree">ºC</string>
+    <string name="feel_formated">Feels %1$s</string>
+    <string name="percent_formated">%1$s</string>
+    <string name="one_week_forecast">One week Forecast</string>
+    <string name="today_forecast_details">Today forecast details</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="returned_from_app_settings_to_activity">From app settings</string>
+    <string name="msg_error">Error!</string>
+    <string name="no_connection">Offline: Check your internet access</string>
+    <string name="result_not_found">Without data to show</string>
+</resources>

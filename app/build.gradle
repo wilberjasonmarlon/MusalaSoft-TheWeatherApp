@@ -1,0 +1,109 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-kapt'
+    id "com.google.devtools.ksp" version "1.6.10-1.0.4"
+    //id "com.google.gms.google-services"
+}
+
+android {
+    compileSdk Android.compileSdk
+    buildToolsVersion Android.buildTools
+
+    defaultConfig {
+        applicationId Android.appId
+        minSdk Android.minSdk
+        targetSdk Android.targetSdk
+        versionCode Android.versionCode
+        versionName Android.versionName
+        buildConfigField("String", "API_KEY", OW_API_KEY)
+
+        testInstrumentationRunner Android.testInstrumentationRunner
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation AndroidX.core
+    implementation AndroidX.appCompat
+    implementation AndroidX.lifecycleVmKtx
+    implementation Material.material
+    implementation AndroidX.constraintlayout
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    //Hilt
+    implementation(Hilt.hiltAndroid)
+    implementation(Hilt.hiltLycViewModel)
+    kapt(Hilt.hiltCompilerKapt)
+    androidTestImplementation(Hilt.hiltTestingImp)
+    kaptAndroidTest(Hilt.hiltTestingKapt)
+    //Navigation
+    implementation(AndroidX.navigationFrmKtx)
+    implementation(AndroidX.navigationUiKtx)
+    //Retrofit
+    implementation(Retrofit.retrofit)
+    implementation(Retrofit.okHttp)
+    implementation(Retrofit.gsonConverter)
+    //OkHttp
+    implementation(Retrofit.loggingInterceptor)
+    //Gson
+    implementation(Gson.gson)
+    //Room
+    implementation(Room.runtime)
+    // Kotlin Extensions and Coroutines support for Room
+    implementation(Room.ktx)
+    kapt(Room.compiler)
+    //Paging Library
+    implementation(Paging.runtimeKtx)
+    implementation(Room.pagin)
+    // Coroutines
+    implementation(Coroutines.core)
+    implementation(Coroutines.android)
+    implementation(Coroutines.play)
+    // Coroutine Lifecycle Scopes
+    implementation(Lifecycle.viewmodelKtx)
+    implementation(Lifecycle.runtime)
+    implementation(Lifecycle.extensions)
+    //LiveData//
+    implementation(Lifecycle.livedata)
+    //Coil
+    implementation(Coil.coil)
+    //Shimmer
+    implementation(FacebookShimmer.shimmer)
+    //GMap
+    implementation(GMServices.slocation)
+    //Easy permissions
+    implementation(EPermissions.easy)
+    //mockito
+    implementation (Mockito.mockk)
+    //Swipe Refresh layout
+    implementation (AndroidX.swipeRefreshLayout)
+
+
+    // https://mvnrepository.com/artifact/com.google.devtools.ksp/symbol-processing-api
+    runtimeOnly 'com.google.devtools.ksp:symbol-processing-api:1.7.10-1.0.6'
+
+
+
+}
